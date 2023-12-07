@@ -5,7 +5,7 @@
 # DEPENDENCIES
 # sudo apt-get install python3
 # sudo apt-get -y install python3-pip
-# python3 -m pip install guilded.py==1.5.1
+# python3 -m pip install guilded.py==1.6.0
 #
 # HOW TO USE
 # Go to Settings -> Bots -> Create a bot
@@ -51,6 +51,9 @@ class NetworkBot(Bot):
 
     async def on_bot_added(self, server, member):
         print(f'Bot added to server {server.name}')
+
+    async def on_bot_removed(self, server, member):
+        print(f'Bot removed from server {server.name}')
 
 # start a bot
 client = NetworkBot(command_prefix=BOT_PREFIX)

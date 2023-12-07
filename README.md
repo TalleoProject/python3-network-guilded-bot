@@ -10,7 +10,7 @@ apt-get -y install python3 python3-pip
 ``
 
 ``
-python3 -m pip install guilded.py==1.5.1
+python3 -m pip install guilded.py==1.6.0
 ``
 
 ## HOW TO USE
